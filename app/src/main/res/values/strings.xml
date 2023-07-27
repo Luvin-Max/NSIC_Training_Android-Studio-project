@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Nsic_ProjectsApk</string>
+    <string name="home_page">home page</string>
+    <string name="calculator_models">Calculator Models</string>
+    <string name="type_1">calculator 1</string>
+    <string name="type_2">calculator 2</string>
+    <string name="input_1">Input 1</string>
+    <string name="enter_the_number">enter the number</string>
+    <string name="input_2">Input 2</string>
+    <string name="answer">Answer :</string>
+    <string name="answer_view">Answer View</string>
+    <string name="_1">+</string>
+    <string name="_2">-</string>
+    <string name="_3">*</string>
+    <string name="_4">/</string>
+    <string name="_5">%</string>
+    <string name="_6">^</string>
+    <string name="_0">0</string>
+    <string name="ac">AC</string>
+    <string name="de">DE</string>
+    <string name="_7_">7</string>
+    <string name="_8_">8</string>
+    <string name="_9_">9</string>
+    <string name="_4_">4</string>
+    <string name="_5_">5</string>
+    <string name="_6_">6</string>
+    <string name="_1_">1</string>
+    <string name="_2_">2</string>
+    <string name="_3_">3</string>
+    <string name="_00_">00</string>
+    <string name="_0_">0</string>
+    <string name="_00">.</string>
+    <string name="_000">=</string>
+    <string name="videos_list">Videos List</string>
+    <string name="app_name1">GFG|Stopwatch</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+</resources>

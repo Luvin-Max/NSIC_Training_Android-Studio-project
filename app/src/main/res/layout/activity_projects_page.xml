@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".projects_page"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:ignore="ScrollViewCount">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backscr_lay_1"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_page"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="7">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/day1"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:columnCount="0"
+                android:rowCount="0"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="20dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Day 1 Project"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/day2"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:columnCount="0"
+                android:rowCount="0"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="20dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Day 2 Project"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/day3"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:columnCount="0"
+                android:rowCount="0"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="20dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Day 3 Project"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/day4"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:columnCount="0"
+                android:rowCount="0"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="20dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Day 4 Project"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/day5"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:columnCount="0"
+                android:rowCount="0"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="20dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Day 5 Project"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/day6"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:columnCount="0"
+                android:rowCount="0"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="20dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Day 6 Project"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/day7"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:columnCount="0"
+                android:rowCount="0"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="20dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Day 7 Project"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

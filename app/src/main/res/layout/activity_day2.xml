@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Day2"
+    android:orientation="vertical"
+    tools:ignore="Orientation">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculator_models"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnTyp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backscr_lay_2"
+            android:text="@string/type_1"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnTyp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/backscr_lay_2"
+            android:text="@string/type_2"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/input_1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ipView1"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="180dp"
+                    android:hint="@string/enter_the_number" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/input_2"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ipView2"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="180dp"
+                    android:hint="@string/enter_the_number"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/answer"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ansView"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="180dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:hint="@string/answer_view" />
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:columnCount="3"
+                android:rowCount="2">
+
+              <Button
+                  android:id="@+id/btnAdd"
+                  android:layout_height="60dp"
+                  android:layout_width="90dp"
+                  android:text="@string/_1"
+                  android:textStyle="bold"
+                  android:textSize="25sp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginStart="20dp"
+                  android:layout_marginEnd="10dp"/>
+                <Button
+                    android:id="@+id/btnSub"
+                    android:layout_height="60dp"
+                    android:layout_width="90dp"
+                    android:text="@string/_2"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="10dp"/>
+                <Button
+                    android:id="@+id/btnMul"
+                    android:layout_height="60dp"
+                    android:layout_width="90dp"
+                    android:text="@string/_3"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="10dp"/>
+                <Button
+                    android:id="@+id/btnDiv"
+                    android:layout_height="60dp"
+                    android:layout_width="90dp"
+                    android:text="@string/_4"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"/>
+                <Button
+                    android:id="@+id/btnPer"
+                    android:layout_height="60dp"
+                    android:layout_width="90dp"
+                    android:text="@string/_5"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="10dp"/>
+                <Button
+                    android:id="@+id/btnGra"
+                    android:layout_height="60dp"
+                    android:layout_width="90dp"
+                    android:text="@string/_6"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="10dp"/>
+
+
+            </GridLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textUpper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:maxLength="20"
+                android:textSize="40sp"
+                android:gravity="bottom"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat"
+                />
+        <TextView
+            android:id="@+id/textMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/_0"
+            android:textColorHint="@color/black"
+            android:maxLength="20"
+            android:textSize="45sp"
+            android:gravity="bottom"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textAlignment="textEnd"
+            tools:ignore="RtlCompat"
+             />
+        <TextView
+            android:id="@+id/textLower"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="bottom"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:textAlignment="textEnd"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            tools:ignore="RtlCompat" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="5"
+                tools:ignore="UselessParent">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnAc"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/ac"
+                        android:textColor="#FF5722"
+                        android:textSize="25sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnDe"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/de"
+                        android:textColor="#FF5722"
+                        android:textSize="25sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnPercentage"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_5"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnDivide"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_4"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn7"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_7_"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn8"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_8_"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn9"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_9_"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnMultiply"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_3"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn4"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_4_"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn5"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_5_"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn6"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_6_"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnSubtraction"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_2"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn1"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_1_"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn2"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_2_"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn3"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_3_"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnAddition"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_1"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn00"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_00_"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn0"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_0_"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnDot"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_00"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnEqual"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/_000"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+        </LinearLayout>
+</LinearLayout>
+    </FrameLayout>
+    </FrameLayout>
+</LinearLayout>
